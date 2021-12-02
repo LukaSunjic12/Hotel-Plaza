@@ -1,15 +1,27 @@
-public class Room {
+package com.company;
+
+import java.util.ArrayList;
+
+public class Room  {
     private int RoomNumber;
     private int numberOfbeds;
     private boolean internetAccess;
     private double pricePernight;
+    private String roomType;
+
+    ArrayList<Room>rooms=new ArrayList<>();
+
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
 
     //constructor
-    public Room(int roomNumber,int numberOfbeds,boolean internetAccess, double pricePernight){
+    public Room(int roomNumber,int numberOfbeds, double pricePernight,String roomType){
         this.RoomNumber=RoomNumber;
         this.numberOfbeds=numberOfbeds;
-        this.internetAccess=internetAccess;
+
         this.pricePernight=pricePernight;
+        this.roomType=roomType;
     }
     //set method
     public void setRoomNumber(int newRoomNumber){
@@ -18,12 +30,10 @@ public class Room {
     public void setNumberOfbeds(int newNumberOfbeds){
         numberOfbeds=newNumberOfbeds;
     }
-    public void setInternetAccess(boolean newInternetAccess){
-        internetAccess=newInternetAccess;
-    }
     public void setPricePernight(double newPricePernight){
         pricePernight=newPricePernight;
     }
+    public void setRoomType(String newroomType){roomType=newroomType;}
 
     //get method
     public int getRoomNumber(){
@@ -32,13 +42,11 @@ public class Room {
     public int getNumberOfbeds(){
         return numberOfbeds;
     }
-    public boolean getinternetAccess(){
-        return internetAccess;
-    }
     public double getPricePernight(){
         return pricePernight;
     }
-
-
-    }
+    public String getRoomType(){
+        return roomType;}
 }
+
+
