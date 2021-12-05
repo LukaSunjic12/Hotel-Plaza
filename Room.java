@@ -11,15 +11,18 @@ public class Room  {
 
     ArrayList<Room>rooms=new ArrayList<>();
 
+    public Room() {
+    }
+
     public ArrayList<Room> getRooms() {
         return rooms;
     }
 
     //constructor
-    public Room(int roomNumber,int numberOfbeds, double pricePernight,String roomType){
-        this.RoomNumber=RoomNumber;
+    public Room(int roomNumber,int numberOfbeds, boolean internetAccess, double pricePernight, String roomType){
+        this.RoomNumber=roomNumber;
         this.numberOfbeds=numberOfbeds;
-
+        this.internetAccess = internetAccess;
         this.pricePernight=pricePernight;
         this.roomType=roomType;
     }
@@ -42,6 +45,7 @@ public class Room  {
     public int getNumberOfbeds(){
         return numberOfbeds;
     }
+    public boolean getInternetAccess() {return internetAccess;}
     public double getPricePernight(){
         return pricePernight;
     }

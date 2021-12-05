@@ -258,7 +258,12 @@ public class Menu {
                                  guestChange.setName(name1);
                                  guestChange.setAddress(address);
                                  guestChange.setTelephoneNumber(telephonenumber);
-                                 guests.set(i,guestChange);
+                                 //guestChange.setName(name1);
+                                // guestChange.setAddress(address);
+                                 //guestChange.setTelephoneNumber(telephonenumber);
+                                 guests.get(i).setName(name1);
+                                 guests.get(i).setAddress(address);
+                                 guests.get(i).setTelephoneNumber(telephonenumber);
                              }
                          }
                          break;
