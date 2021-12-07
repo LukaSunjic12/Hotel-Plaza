@@ -251,9 +251,9 @@ public class Menu {
                 case 2://create booking
                     System.out.println("Enter booking_id");
                     int booking_id = scanner.nextInt();
-                    System.out.println("Enter check in date");
+                    System.out.println("Enter check in date dd-mm-yyyy");
                     String checkInDate = scanner.next();
-                    System.out.println("Enter check out date");
+                    System.out.println("Enter check out date dd-mm-yyyy");
                     String checkOutDate = scanner.next();
                     System.out.println("Guest that is booking");
                     String guest = scanner.next();
@@ -357,9 +357,9 @@ public class Menu {
                 case 8:
                     System.out.println("Enter booking_id");
                     booking_id = scanner.nextInt();
-                    System.out.println("Enter new check in date");
+                    System.out.println("Enter new check in date dd-mm-yyyy");
                     checkInDate = scanner.next();
-                    System.out.println("Enter new check out date");
+                    System.out.println("Enter new check out date dd-mm-yyyy");
                     checkOutDate = scanner.next();
                     System.out.println("Enter new number of nights");
                     numberOfNights = scanner.nextInt();
@@ -408,9 +408,9 @@ public class Menu {
             int options2 = scanner3.nextInt();
             switch (options2) {
                 case 1:
-                    System.out.println("Enter check in date");
+                    System.out.println("Enter check in date dd-mm-yyyy");
                     String checkInDate = scanner3.next();
-                    System.out.println("Enter check out date");
+                    System.out.println("Enter check out date dd-mm-yyyy");
                     String checkOutDate = scanner3.next();
                     System.out.println("Enter Guest details");
                     System.out.println("Enter  name");
