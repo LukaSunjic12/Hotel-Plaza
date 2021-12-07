@@ -24,6 +24,8 @@ public class Menu {
     ArrayList<Staff> staffs = new ArrayList<Staff>();
     ArrayList<Guest> guests = new ArrayList<Guest>();
 
+
+
     public void chooseMenu() {
 
 
